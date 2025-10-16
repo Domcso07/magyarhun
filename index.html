@@ -58,7 +58,10 @@
     .cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 16px; }
     .grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
     @media (min-width: 800px) { .grid { grid-template-columns: 1fr 1fr; } }
-    section { margin: 32px 0; }
+    section {
+      margin: 32px 0;
+      scroll-margin-top: 80px; /* a header magasságával egyezzen */
+      }
     .card {
       background: var(--card); border: 1px solid #24263a; border-radius: 16px; padding: 20px;
     }
