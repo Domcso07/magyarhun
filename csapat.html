@@ -83,36 +83,31 @@
       border-radius: 8px; /* ha lekerekített sarkakat szeretnél */
 }
 
-.dev-list li {
-  display: flex;
-  align-items: center;
-  gap: 16px; /* fix távolság a név és a discord között */
-  padding: 8px 12px;
-  background: linear-gradient(135deg, #1f2238, #2a2d45);
-  border-radius: 8px;
-  border: 1px solid #2f3350;
-  font-size: 14px;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+.dev-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
 }
 
-.dev-list li:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(59,130,246,0.25);
+.dev-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #2f3350;
 }
 
 .dev-name {
   font-weight: 600;
   color: #e5e7eb;
-  min-width: 120px; /* opcionális: fix szélesség, hogy szépen oszlopban álljanak */
+  width: 150px; /* fix szélesség a név oszlopnak */
 }
 
 .dev-discord {
   color: #93c5fd;
-  font-size: 14px;
   background: rgba(59,130,246,0.15);
   padding: 4px 8px;
   border-radius: 6px;
 }
+
+
 
   </style>
 </head>
@@ -155,21 +150,22 @@
   <main class="container">
    <section class="card">
   <div class="role">Discord Fejlesztők</div>
-  <ul class="dev-list">
-    <li>
-      <span class="dev-name">Panda</span>
-      <span class="dev-discord">@pandao_o</span>
-    </li>
-    <li>
-      <span class="dev-name">Domcso07</span>
-      <span class="dev-discord">@domcso07_1</span>
-    </li>
-    <li>
-      <span class="dev-name">Nándi</span>
-      <span class="dev-discord">@nandi3063</span>
-    </li>
-  </ul>
+  <table class="dev-table">
+    <tr>
+      <td class="dev-name">Panda</td>
+      <td class="dev-discord">@pandao_o</td>
+    </tr>
+    <tr>
+      <td class="dev-name">Domcso07</td>
+      <td class="dev-discord">@domcso07_1</td>
+    </tr>
+    <tr>
+      <td class="dev-name">Nándi</td>
+      <td class="dev-discord">@nandi3063</td>
+    </tr>
+  </table>
 </section>
+
 
 </main>
 
