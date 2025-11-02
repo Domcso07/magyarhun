@@ -83,45 +83,38 @@
       border-radius: 8px; /* ha lekerekített sarkakat szeretnél */
 }
 
-.dev-list {
-  list-style: none;
-  padding: 0;
-  margin: 8px 0 0;   /* kisebb felső margó */
-  display: grid;
-  gap: 6px;          /* kisebb térköz az elemek között */
+.dev-list li {
+  display: flex;
+  justify-content: flex-start; /* ne tolja szét teljesen */
+  gap: 20px;                   /* fix távolság a név és a discord között */
 }
+
 
 .dev-list li {
+  display: grid;
+  grid-template-columns: 1fr auto; /* bal oldalt rugalmas, jobb oldalt szűk */
+  align-items: center;
+  padding: 8px 10px;
   background: linear-gradient(135deg, #1f2238, #2a2d45);
-  padding: 8px 10px;   /* kisebb belső térköz */
   border-radius: 8px;
   border: 1px solid #2f3350;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 14px;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
-
-.dev-list li:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(59,130,246,0.25);
-}
-
-
 .dev-name {
   font-weight: 600;
   color: #e5e7eb;
 }
-
 .dev-discord {
-  font-size: 14px;
   color: #93c5fd;
+  font-size: 14px;
   background: rgba(59,130,246,0.15);
   padding: 4px 8px;
   border-radius: 6px;
 }
 
+.dev-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(59,130,246,0.25);
+}
 
   </style>
 </head>
