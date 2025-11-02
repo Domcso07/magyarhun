@@ -86,16 +86,38 @@
 .dev-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 16px 0 0;
   display: grid;
-  gap: 8px;
+  gap: 12px;
 }
 
 .dev-list li {
-  background: #2a2d45;
-  padding: 8px 10px;
-  border-radius: 8px;
+  background: linear-gradient(135deg, #1f2238, #2a2d45);
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #2f3350;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.dev-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(59,130,246,0.25);
+}
+
+.dev-name {
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+.dev-discord {
   font-size: 14px;
+  color: #93c5fd;
+  background: rgba(59,130,246,0.15);
+  padding: 4px 8px;
+  border-radius: 6px;
 }
 
 
@@ -138,25 +160,24 @@
     </section>
   </main>
   <main class="container">
-    <section class="card">
-  <div class="member">
+   <section class="card">
   <div class="role">Discord Fejlesztők</div>
   <ul class="dev-list">
     <li>
-      <strong>Név:</strong> Panda<br>
-      <strong>Discord::</strong> @pandao_o
+      <span class="dev-name">Panda</span>
+      <span class="dev-discord">@pandao_o</span>
     </li>
     <li>
-      <strong>Név:</strong> Domcso07<br>
-      <strong>Discord:</strong> @domcso07_1
+      <span class="dev-name">Domcso07</span>
+      <span class="dev-discord">@domcso07_1</span>
     </li>
     <li>
-      <strong>Név:</strong> Nándi<br>
-      <strong>Discord:</strong> @nandi3063
+      <span class="dev-name">Nándi</span>
+      <span class="dev-discord">@nandi3063</span>
     </li>
   </ul>
-</div>
 </section>
+
 </main>
 
   <footer class="container">
