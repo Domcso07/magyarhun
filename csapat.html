@@ -83,18 +83,10 @@
       border-radius: 8px; /* ha lekerekített sarkakat szeretnél */
 }
 
-.dev-list {
-  list-style: none;
-  padding: 0;
-  margin: 8px 0 0;
-  display: grid;
-  gap: 8px;
-}
-
 .dev-list li {
   display: flex;
-  justify-content: space-between; /* név balra, discord jobbra */
   align-items: center;
+  gap: 16px; /* fix távolság a név és a discord között */
   padding: 8px 12px;
   background: linear-gradient(135deg, #1f2238, #2a2d45);
   border-radius: 8px;
@@ -111,6 +103,7 @@
 .dev-name {
   font-weight: 600;
   color: #e5e7eb;
+  min-width: 120px; /* opcionális: fix szélesség, hogy szépen oszlopban álljanak */
 }
 
 .dev-discord {
@@ -120,7 +113,6 @@
   padding: 4px 8px;
   border-radius: 6px;
 }
-
 
   </style>
 </head>
