@@ -86,26 +86,28 @@
 .dev-list {
   list-style: none;
   padding: 0;
-  margin: 16px 0 0;
+  margin: 8px 0 0;   /* kisebb felső margó */
   display: grid;
-  gap: 12px;
+  gap: 6px;          /* kisebb térköz az elemek között */
 }
 
 .dev-list li {
   background: linear-gradient(135deg, #1f2238, #2a2d45);
-  padding: 12px 14px;
-  border-radius: 10px;
+  padding: 8px 10px;   /* kisebb belső térköz */
+  border-radius: 8px;
   border: 1px solid #2f3350;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 14px;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .dev-list li:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(59,130,246,0.25);
+  box-shadow: 0 4px 12px rgba(59,130,246,0.25);
 }
+
 
 .dev-name {
   font-weight: 600;
